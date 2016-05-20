@@ -46,3 +46,14 @@ group :development do
   gem 'spring'
 end
 
+
+gem 'bootstrap-sass'
+gem 'haml-rails'
+
+group :development do
+  gem 'better_errors'
+  gem 'html2haml'
+  gem 'rails_apps_pages'
+  gem 'rails_layout'
+end
+
