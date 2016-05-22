@@ -1,5 +1,5 @@
 ready = ->
-  
+
   $('.glyphicon-arrow-up').on 'touchstart', ->
     $.ajax({
       type: 'GET',
