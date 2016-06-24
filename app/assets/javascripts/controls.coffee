@@ -1,52 +1,20 @@
 ready = ->
 
-  $('.glyphicon-arrow-up').on 'touchstart', ->
-    $.ajax({
-      type: 'GET',
-      url: '/controls/forward'
-    })
+  set_width()
+  $(window).resize ->
+    set_width()
 
-  $('.glyphicon-arrow-down').on 'touchstart', ->
-    $.ajax({
-      type: 'GET',
-      url: '/controls/backward'
-    })
 
-  $('.glyphicon-arrow-left').on 'touchstart', ->
-    $.ajax({
-      type: 'GET',
-      url: '/controls/left'
-    })
 
-  $('.glyphicon-arrow-right').on 'touchstart', ->
-    $.ajax({
-      type: 'GET',
-      url: '/controls/right'
-    })
+set_width = ->
 
-  $('.glyphicon-arrow-up').on 'touchend', ->
-    $.ajax({
-      type: 'GET',
-      url: '/controls/kill_movement'
-    })
+  width = $(window).width()
+  margin_left = (width - 800) / 2
+  $('#video').css('margin-left', margin_left)
 
-  $('.glyphicon-arrow-down').on 'touchend', ->
-    $.ajax({
-      type: 'GET',
-      url: '/controls/kill_movement'
-    })
-
-  $('.glyphicon-arrow-left').on 'touchend', ->
-    $.ajax({
-      type: 'GET',
-      url: '/controls/kill_turn'
-    })
-
-  $('.glyphicon-arrow-right').on 'touchend', ->
-    $.ajax({
-      type: 'GET',
-      url: '/controls/kill_turn'
-    })
+  height = $(window).height()
+  margin_top = (height - 600) / 2
+  $('#video').css('margin-top', margin_top)
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
