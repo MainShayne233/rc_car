@@ -1,4 +1,66 @@
 #video{
-  margin-top: 100px;
-  height: 455px;
+}
+
+.border{
+  outline: 2px solid;
+}
+
+body{
+background-color: black;
+}
+
+.stage{
+  text-align: center;
+  width: 190px; 
+  height: 200px;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.altitude{
+  margin: 40px;
+  height: 680px;
+  width: 50px;
+  background-color: yellow
+}
+
+.diagnostics{
+  margin: 40px;
+  height: 200px;
+  width: 400px;
+  background-image: image-url('data.gif');
+}
+
+.fuel{
+  margin-top: 40px;
+  height: 680px;
+  width: 50px;
+  background-color: purple 
+}
+
+.launch{
+  margin: 40px;
+  height: 200px;
+  width: 600px;
+}
+
+.video{
+  margin: 40px;
+  height: 438px;
+  width: 600px;
+  background-color: black;
+}
+
+.timer{
+  margin: 40px;
+  height: 200px;
+  width: 400px;
+  background-image: image-url("timer.gif");
+}
+
+.telemetry{
+  margin: 40px;
+  height: 200px;
+  width: 400px;
+  background-image: image-url("radar.gif");
 }
